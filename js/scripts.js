@@ -1,7 +1,12 @@
+
+// Carousel
+
 $(function () {
     $(".carousel").carousel({
-        interval: 2000, pause: "false" } );
-    $("#carouselButton").click(function(){
+        interval: 2000,
+        pause: "false"
+    });
+    $("#carouselButton").click(function () {
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
             $(".carousel").carousel("pause");
             $("#carouselButton").children("i").removeClass("fa-pause");
@@ -13,3 +18,18 @@ $(function () {
         }
     });
 });
+
+
+// Modals 
+
+
+$(function () {
+    $("#reserveButton").click(function () {
+        $("#reserveModal").modal("show");
+    });
+
+    $("#loginButton").click(function () {
+        $("#loginModal").modal("show");
+    });
+});
+
